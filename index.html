@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Cake Printer</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  
+   !-- Facebook Meta Tags -->
+   <meta property="og:url" content="https://cakeprinter.online/" />
+   <meta property="og:type" content="website" />
+   <meta property="og:title" content="Cake Printer" />
+   <meta property="og:description"content="Project made by TokenPrinters team" />
+   <meta property="og:image" content="./assets/img/CakeLogo.png" />
+
+   <!-- Twitter Meta Tags -->
+   <meta name="twitter:card" content="summary_large_image" />
+   <meta property="twitter:domain" content="" />
+   <meta property="twitter:url" content="https://cakeprinter.online/" />
+   <meta name="twitter:title" content="Cake Printer" />
+   <meta name="twitter:description" content="Project made by TokenPrinters team" />
+   <meta name="twitter:image" content="./assets/img/CakeLogo.png" />
+  
+   <link rel="apple-touch-icon" href="%PUBLIC_URL%/apple-touch-icon.png" />
+
+  <!-- Favicons -->
+  <link href="assets/img/CakeLogo.png" rel="icon" type="image/jpg">
+  <link href="assets/img/CakeLogo.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/web3/3.0.0-rc.5/web3.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-lg-between">
+      <a href="" class="logo me-auto me-lg-0" ><img src="./assets/img/CakeLogo.png" alt=""></a>
+       <h1 class="logo me-auto me-lg-0"><a href="index.html">Cake Printer<span>.</span></a></h1> 
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto bnb-miner" href="" target="_blank">Check out Ada Printer!</a></li>  
+          <li><a class="nav-link scrollto mine" href="#mine">Start Mining</a></li>
+          <li><a class="nav-link scrollto" href="#lottery">Lottery</a></li>
+          <li><a class="nav-link scrollto" href="#faq">FAQ</a></li>
+          <li>
+            <a class="nav-link" href="https://bscscan.com/address/0x002f1e12e7b101deaf512a261524f5b21f62d186#code" target="_blank"><img class="nav-logo" id="logo" alt="" src="assets/img/bscscan-logo-light-circle.svg"></img>Verified Contract</a>
+          </li>
+          <li>
+            <a class="nav-link" href="https://t.me/TokenPrintersTeam" target="_blank"><img class="nav-logo" id="telegram" alt="" src="assets/img/telegram.svg"></img>Telegram</a> 
+          </li>
+
+          <li>
+            <a class="nav-link" >
+              <button id="enableMetamask" class="btn connect-btn">Connect</button>
+            </a>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center justify-content-center">
+    <div class=container>
+      <!-- <div class="row" style="margin: 0 auto;">
+        <div class="big-timer" id="start-container">
+          Starts in <strong id="start-timer">00:00:00</strong>
+        </div>
+      </div> -->
+      <div class="content-box" data-aos="zoom-in">
+        <div class="row info-container" data-aos="zoom-in">
+          <h1>Welcome to<span class="busd"> Cake Printer </span>!</h1>
+          <h2>A smart and sustainable way to grow your CAKE on the Binance Smart Chain.</h2>
+          <h4>
+            <i class="bi-check2-square busd-icon"></i>
+            <span id="daily-rate">0% Daily ~ 0% APR</span>
+          </h4>
+          <h4>
+            <i class="bi-check2-square busd-icon"></i>
+            <span id="daily-compound">0% Daily Compound Bonus</span>
+          </h4>
+          <h4>
+            <i class="bi-check2-square busd-icon"></i>
+            <span id="ref-bonus">0% Referrals</span>
+          </h4>
+          <h4>
+            <i class="bi-check2-square busd-icon"></i>
+            <span>Multiple Lotteries Per Day</span>
+          </h4>
+         </div>
+        <div class="row stats-row-container" data-aos="zoom-in">
+          <div class="col-md-2 stat">
+            <div class="header">
+              Total<span class="busd"> CAKE </span>Staked
+            </div>
+            <strong class="number" id="total-staked">0</strong>
+             <div class="usd">
+              ≈ $<span id="total-staked-usd" class="usd" >0 </span> USD
+            </div> 
+          </div>
+          <div class="col-md-2 stat">
+            <div class="header">
+              Total Referral<span class="busd"> CAKE </span>
+            </div>
+            <strong class="number" id="total-ref">0</strong>
+             <div class="usd">
+              ≈ $<span id="total-ref-usd" class="usd" >0 </span> USD
+            </div> 
+          </div>
+          <div class="col-md-2 stat">
+            <div class="header">
+              Contract <span class="busd">CAKE</span>
+            </div>
+            <strong id="contract-balance" class="number">0</strong>
+             <div class="usd">
+              ≈ $<span id="contract-balance-usd" >0 </span> USD
+            </div> 
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center" data-aos="zoom-in">
+        <a href="#mine" class="mine-btn scrollto">Start Mining</a>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+    <section id="mine" class="d-flex">
+      <div class="container main" data-aos="fade-up">
+        <div class="row justify-content-center">
+          <div class="col-xl-12 col-md-12 disclaimer">
+            <i class="ri-alert-line"></i>
+            <span>
+              <strong>Note:</strong> Funds that are deposited (including compounds) cannot be withdrawn, however the miner will pay daily dividends and
+              referrals rewards for the life of the contract. Please use at your own risk. Remember, never invest more than you can afford to lose
+              and always do your own research!
+            </span>
+          </div>
+        </div>
+        <div class="content-box">
+          <h4>
+            Dashboard
+          </h4>
+          <div class="row stats-row-container">
+            <div class="col-lg-2 stat">
+              <div class="header">
+                <i class="bi-bank"></i>
+                <span>Initial Deposit</span>
+              </div>
+              <strong id="initial-deposit" class="number">0</strong>
+              <div>
+                <strong class="busd">CAKE</strong>
+              </div>
+               <div class="usd">
+                ≈ $<span id="initial-deposit-usd" >0 </span> USD
+              </div> 
+            </div>
+            <div class="col-lg-2 stat">
+              <div class="header">
+                <i class="bi-bank"></i>
+                Total Deposit
+              </div>
+              <strong id="total-deposit" class="number">0</strong>
+              <div>
+                <strong class="busd">CAKE</strong>
+              </div>
+               <div class="usd">
+                ≈ $<span id="total-deposit-usd" >0 </span> USD
+              </div> 
+            </div>
+            <div class="col-lg-2 stat">
+              <div class="header">
+                <i class="bi-wallet2"></i>
+                Withdrawn
+              </div>
+              <div>
+                <strong id="total-withdrawn" class="number">0</strong>
+              </div>
+              <div>
+                <strong class="busd">CAKE</strong>
+              </div>
+               <div class="usd">
+                ≈ $<span id="total-withdrawn-usd" >0 </span> USD
+              </div>
+            </div>
+            <div class="col-lg-2 stat">
+              <div class="header">
+                <i class="bi-people"></i>
+                Referral Rewards
+                (<span id="ref-count">0</span>)
+              </div>
+              <div>
+                <strong id="ref-rewards-busd" class="number">0</strong>
+              </div>
+              <div>
+                <strong class="busd">CAKE</strong>
+              </div>
+               <div class="usd">
+                ≈ $<span id="ref-rewards-usd" >0 </span> USD
+              </div>
+            </div>
+            <div class="col-lg-2 stat">
+              <div class="header">
+                <i class="bi-dice-6"></i>
+                Lottery Rewards
+              </div>
+              <div>
+                <strong id="lottery-rewards-busd" class="number">0</strong>
+              </div>
+              <div>
+                <strong class="busd">CAKE</strong>
+              </div>
+               <div class="usd">
+                ≈ $<span id="lottery-rewards-usd" >0 </span> USD
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 referral-link">
+              <span>
+                <i class="bi-check2-square"></i>
+                Earn
+                <span id="ref-percent">0%</span>
+                <span>when someone uses your referral link!</span>
+                <span>
+                  <a id="reflink"></i></a><span onclick="copyRef()"><i class="ri-file-copy-line"></i><span id="copied"></span>
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-6 first-box" style="margin-top: 5px;">
+              <div class="deposit-container">
+                <div class="row example">
+                  <div class="col-lg-8">
+                    <div style="line-height: 1.4; font-size: 14px;">
+                      <strong>
+                        Investment Example
+                      </strong>
+                      <div>
+                        <div>
+                          500 <span class="busd">CAKE</span>
+                          = <span id="example-miners">0 </span> Miners
+                        </div>
+                        <!-- <div>
+                          <i class="bi-minecart"></i>
+                        </div> -->
+                        <div>
+                          <i class="ri-coins-line ri-1x"></i>
+                          Daily Yield:
+                          <span id="example-busd">0</span><span class="busd">CAKE</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="wallet">
+                      <i class="bi-wallet2"></i>
+                      <strong>Wallet</strong>
+                      <div>
+                        <span id="user-balance">0</span><span class="busd">CAKE</span>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="btn-container">
+                  <div class="approve-container">
+                    <div style="padding-left: 5px; font-weight: 700;">
+                      <span style="font-size: 16px;">1.</span><!-- <i class="bi-bank"></i> -->
+                      <strong>Approve</strong><span class="busd"> CAKE </span><span class="usd">(<span id="user-approved-spend">0</span> CAKE approved)</span>
+                       <span class="usd">
+                        ≈ $<span id="user-approved-spend-usd">0 </span><span> BUSD</span>
+                      </span> 
+                    </div>
+                    <div>
+                      <input class="form-control" id="approve-spend" name="approved-spend" step="1" type="number" value="10">
+                      <button class="btn btn-invest" id="" onclick="approveMiner()" role="button">Approve CAKE Printer</button>
+                    </div>
+                  </div>
+                  <strong style="padding-left: 5px; padding-bottom: 5px";>
+                    <span style="font-size: 16px;">2.</span><!-- <i class="bi-bank"></i> -->
+                    Deposit <span class="busd">CAKE</span>
+                    <span class="usd">
+         <!--             (<span id="max-deposit">0 </span> max)
+                    </span> --> 
+                    <input class="form-control" id="busd-spend" name="buy-miners" onChange="updateBuyPrice()" step="100" type="number" value="10">
+                  </strong>
+                  <button class="btn btn-invest" id="buy-eggs-btn" onclick="buyEggs()" role="button" disabled>
+                    Hire
+                    <span id="eggs-to-buy">0</span>
+                    Miners
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6" style="margin-top: 5px;">
+              <div class="deposit-container">
+                <div class="miners-info" style="margin-bottom: unset;">
+                  <div>
+                    <i class="bi-minecart"></i>
+                    <span id="your-miners">0 </span>
+                    Miners
+                  </div>
+                  <div>
+                    <i class="bi-arrow-down-short" style="font-size: 27px;"></i>
+                  </div>
+                  <div style="font-size: 25px;">
+                    <i class="ri-coins-line ri-1x"></i>
+                    <strong id="mined">0</strong>
+                    <span><strong class="busd">CAKE</strong></span>
+                  </div>
+                   <span class="usd" style="font-size: 14px;">
+                    ≈ $<span id="mined-usd" >0 </span> USD
+                  </span> 
+                  <div class="usd" style="font-size: 14px; padding: 25px 0 25px 0">
+                    <strong>Estimated daily yield</strong>
+                    <div>
+                      <span id="eggs-per-day">0</span> <strong class="busd">CAKE</strong>
+                      <!-- ≈ $<span id="eggs-per-day-usd"> 0 </span> USD -->
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="timer">
+                    <i class="bi-hourglass-split"></i>
+                    Cart will be full in
+                  </div>
+                  <div style="text-align: center;"><span id="claim-timer">00:00:00</span></div>
+                  <div class="btn-container">
+                    <div>
+                      <button class="btn btn-withdraw" id="withdraw" onclick="sellEggs()" role="button" disabled>
+                        Withdraw
+                        <span class="cooldown" id="cooldown-timer">in 00:00:00</span>
+                        <span class="tax" id="withdraw-tax">-40% tax</span>
+                      </button>
+                    </div>
+                    <div>
+                      <button class="btn btn-reinvest" id="reinvest" onclick="hatchEggs()" role="button" disabled>
+                        Compound
+                        <span class="compound">
+                          (<span class="compound" id="compound-bonus">+0% bonus</span>)
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-1" style="padding: 25px; font-size: 15px; font-weight: 500;">
+          Every day you compound without withdrawing, your compound bonus grows by
+          <span id="compound-percent">0%</span>
+          (max <span id="max-compound">+0%</span>). Withdrawing will reset your bonus to 0.
+          Time until next compound bonus is activated: <span style="font-weight: 700;" id="compound-timer">00:00:00</span>
+        </div>
+      </div>
+    </section>
+    <section id="lottery" class="d-flex align-items-center justify-content-center">
+      <div class="container main" data-aos="fade-up">
+        <div class="content-box">
+          <h4>
+            Lottery
+          </h4>
+          <div class="info-container">
+            <div style="padding-left: unset; padding-bottom: 20px">
+              <h5>
+                <i class="bi-dice-5" style="padding-right: 5px;"></i>
+                <span id="lottery-round">Round 0</span>
+                <span style="padding-left: 5px;""><i class="bi-arrow-right"></i>
+                <span style="padding-left: 5px;">
+                  <i class="bi-cash-coin"></i>
+                  <span id="lottery-pot">0</span><strong class="busd">CAKE</strong>
+                  <div style="font-size: 12px; display: inline-flex;">
+                     <div style="justify-content: space-between;">
+                      (≈ $<span id="lottery-pot-usd" >0 </span> USD)
+                    </div> 
+                  <div>
+                </span>
+              </h5>
+            </div>
+            <div class="row" style="padding-bottom: 10px;">
+              <div class="col-lg-6" style="line-height: 1.6;">
+                <div style="padding-bottom: 5px; font-size: 16px;">
+                  <i class="bi-clock"></i>
+                  Lottery Start: <span id="lottery-start">0</span>
+                </div>
+                <div style="padding-bottom: 5px; font-size: 16px;">
+                  <i class="bi-clock"></i>
+                  Lottery End: <span id="lottery-end">0</span>
+                </div>
+                <div style="padding-bottom: 5px; font-size: 16px;">
+                  <i class="bi-people"></i>
+                  Total Participants: <span id="round-participants">0</span>
+                </div>
+              </div>
+              <div class="col-lg-6" style="line-height: 1.3;">
+                <div style="padding-bottom: 5px; font-size: 16px;">
+                  <i class="ri-ticket-2-line"></i>
+                  Ticket Price:
+                  <span id="ticket-price">0 </span><strong class="busd">CAKE</strong>
+                   <div style="font-size: 12px; display: inline-flex">
+                    <div style="justify-content: space-between;">
+                      (≈ $<span id="ticket-price-usd" >0 </span> USD)
+                    </div>
+                  </div> 
+                </div>
+                <div style="padding-bottom: 5px; font-size: 16px;">
+                  <i class="ri-ticket-2-line"></i>
+                  Your Tickets: <span id="your-tickets">0</span>
+                </div>
+                <div style="padding-bottom: 5px; font-size: 16px;">
+                  <i class="ri-ticket-2-line"></i>
+                  Your Chance of Winning: <span id="lotto-chance">0%</span>
+                </div>
+              </div>
+            </div>
+            <div class="row" style="padding-bottom: 10px;">
+              <div class="col-lg-12">
+                <div style="padding-top: 5px; font-size: 16px;">
+                  <i class="bi-trophy"></i>
+                  Previous Winner: <span id="previous-winner">--</span>
+                </div>
+                <div style="padding-top: 5px; font-size: 16px;">
+                  <i class="bi-cash-coin"></i>
+                  Previous Pot:
+                  <span id="previous-pot-busd">0 </span><strong class="busd">CAKE</strong>
+                   <div style="font-size: 12px; display: inline-flex">
+                    <div style="justify-content: space-between;">
+                      (≈ $<span id="previous-pot-usd" >0 </span> USD)
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Dashboard Section -->
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <h4 style="color: #fff;">FAQ</h4>
+
+        <div class="faq-list">
+          <ul>
+            <li>
+              <i class="bx bx-help-circle icon-help"></i>
+              <a
+                data-bs-toggle="collapse"
+                class="collapse"
+                data-bs-target="#faq-list-1"
+                >What is Cake Printer?
+                <i class="bx bx-chevron-down icon-show"></i
+                ><i class="bx bx-chevron-up icon-close"></i
+              ></a>
+              <div
+                id="faq-list-1"
+                class="collapse show"
+                data-bs-parent=".faq-list"
+              >
+                <p>
+                  Cake Printer is a decentralized game built on the Binance Smart Chain. The object of the game is to hire
+                  more miners sooner and more often than other players. This in turn earns you more CAKE faster.
+                  These miners work for you tirelessly, paying you a daily average of 3% of your miners' value.
+                  The daily percentage return depends on users' actions that are taken within the platform that impact the miner's efficiency rate.
+                  The mining efficiency rate rises and falls as users hire miners, compound earnings and pocket CAKE rewards.
+                  Once miners are hired, they cannot be sold, and the investment made to purchase them (either through depositing or compounding)
+                  cannot be taken back. However, once bought, miners will not stop producing yield.
+                </p>
+                <p>
+                  NOTE: The sustainability and longevity of this game will depend on every single players' actions. It is crucial to compound your earnings at least as
+                  often as you pocket them. The moment someone doesn't do their part, the game as a whole starts to suffer. It is also important to spread the word
+                  and recruit more players to join. If every person brings in two people, and everyone plays the game as it's meant to be played, everyone wins. Do your part
+                  and this game will last a really long time!
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <i class="bx bx-help-circle icon-help"></i>
+              <a
+                data-bs-toggle="collapse"
+                class="collapse"
+                data-bs-target="#faq-list-2"
+                >Yeah, but how do miners work?
+                <i class="bx bx-chevron-down icon-show"></i
+                ><i class="bx bx-chevron-up icon-close"></i
+              ></a>
+              <div
+                id="faq-list-2"
+                class="collapse show"
+                data-bs-parent=".faq-list"
+              >
+                <p>
+                  Mining games work similarly to any other financial market, where an asset has intrinsic value that is relative to the supply or demand of said asset.
+                  Miners are purchased with a pre-determined currency at a price relative to the miner's current mining efficiency rate.
+                  After the miners are purchased, they go to work for you right away to give you the best yield on your investment possible, for as long as possible.
+                  Just as any other asset bought and sold on an open market, the price of a miner will fluctuate over time, as will the mining efficiency rate,
+                  as you and other players hire miners, compound earnings and pocket earnings. To put it plainly, the more demand for the miners,
+                  the more they will increase in value and the more yield they will produce. Inversely, when the demand decreases, so will the value of the
+                  miners and their daily return on investment.
+                </p>
+                <p>
+                  The main difference between a miner and a traditional financial market is that a miner cannot be sold, only the value they provide can be sold.
+                  As the players of the game as a whole compound their earnings and make new deposits, the mining efficiency rate will stay relatively constant,
+                  but the moment players start to withdraw more than they are compounding, the mining efficiency rate will begin to drop as to preserve the TVL and longevity of the miner.
+                </p>
+              </div>
+            </li>
+
+
+            <li>
+              <i class="bx bx-help-circle icon-help"></i>
+              <a
+                data-bs-toggle="collapse"
+                class="collapse"
+                data-bs-target="#faq-list-3"
+                >What makes this miner different?
+                <i class="bx bx-chevron-down icon-show"></i
+                ><i class="bx bx-chevron-up icon-close"></i
+              ></a>
+              <div
+                id="faq-list-3"
+                class="collapse show"
+                data-bs-parent=".faq-list"
+              >
+                <p>
+                  Cake Printer has several anti-dumping and anti-whale measures in place to ensure the longevity of the project.
+                  These measures include maximum deposits, maximum withdrawals, as well as a cutoff time AND a cooldown time for withdrawals.
+                </p>
+                <p>
+                  The cutoff time is the amount of time it will take for your "cart" to be full of rewards. Once the cart is full, it will stop filling until you've taken some
+                  action in the game. This is to prevent whales from letting their rewards accumulate for a long time, and removes the false impression the
+                  contract value is going up when most of it is rewards the whale is waiting to withdraw at once.
+                </p>
+                <p>
+                  The cooloff time is the amount of time one has to wait before they can make another withdrawal. This also prevents the contract balance from decreasing
+                  in value too fast. If the team decides it's necessary to protect the contract balance, this time period can be adjusted to slow down the rate of
+                  withdrawals, but it can only be set to a value less than or equal to 24 hours (per contract rules).
+                </p>
+                <p>
+                  To reward players for playing the game, there is a bonus when you compound your daily earnings instead of withdrawing
+                  them. The compound bonus increases 5% every 12 hours that you compound without withdrawing (70% max after 7 days).
+                  This incentivizes the user to compound more often, which will help boost the miner efficiency rate in the long run.
+                  To be able to utilize the compound bonus feature, the player must not compound before the provided timer reaches 00:00:00.
+                </p>
+                <p>
+                  For the players who choose to not play the game and only withdraw, there will be a 40% tax on those withdrawals that will
+                  stay in the contract. If the player makes two or more consecutive withdrawals, this tax will be applied.
+                  Withdrawals that are made following a compound action (after the 12 hour cooldown) will be exempt from the tax.
+                </p>
+                <p>
+                  Cake Printer also has a very unique feature that has never been done before which effectively decreases the amount of miner inflation
+                  that occurs over a long period of time. Every sell action will only add 5% of the amount sold to the total supply.
+                  Older miner add 100% of what is sold to the total supply. This means the contract will have a lower inflation rate,
+                  keeping the miner market supply more scarce and more valuable than other miners.
+                </p>
+              </div>
+            </li>
+            <li>
+              <i class="bx bx-help-circle icon-help"></i>
+              <a
+                data-bs-toggle="collapse"
+                class="collapse"
+                data-bs-target="#faq-list-4"
+                >How does the lottery work?
+                <i class="bx bx-chevron-down icon-show"></i
+                ><i class="bx bx-chevron-up icon-close"></i
+              ></a>
+              <div
+                id="faq-list-4"
+                class="collapse show"
+                data-bs-parent=".faq-list"
+              >
+                <p>
+                  For every 0.5 CAKE you deposit or compound, you will automatically be given 1 ticket to the current lottery, up to 50 tickets max.
+                  These tickets come at no additional cost to you and have no impact on your overall investment.
+
+
+                  The lottery is automatically drawn every 4 hours or when the lottery has 100 particpants, whichever comes
+                  first. When the winner is selected, 90% of the lottery pot is sent to the winner's available rewards balance as a bonus.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- End Frequently Asked Questions Section -->
+
+
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Cake Printer</span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script type="text/javascript" src="assets/js/main_eth.js"></script>
+</body>
+
+</html>
